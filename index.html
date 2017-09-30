@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<title>Cafe Con Mau</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/jpg" href="images/BitmojiWhite.jpg">
+<link rel="stylesheet" type="text/css" href="C:\Users\Maurizio\Documents\WebDevelopment Course\CafeConMau\CCM Template\CCMTemplate-master\CCMcss.CSS">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+    /* Full height image header */
+
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("images/ccmcoffee.jpg");
+        min-height: 100%;
+        opacity: 0.98;
+    }
+
+    .Mau-bar .Mau-button {
+        padding: 16px;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="Mau-top">
+        <div class="Mau-bar white Mau-card-2" id="myNavbar">
+            <a href="#home" class="Mau-bar-item Mau-button Mau-wide"> <img class="Mau-image Mau-round-small" src="images/bitmojiWhite.jpg" alt="cpu" width="25" height="25"> CAFE CON MAU
+            </a>
+            <!-- Right-sided navbar links -->
+            <div class="Mau-right Mau-hide-small">
+                <a href="#about" class="Mau-bar-item Mau-button">ABOUT</a>
+                <a href="#Personal" class="Mau-bar-item Mau-button"><i class="fa fa-user"></i> PERSONAL</a>
+                <a href="#work" class="Mau-bar-item Mau-button"><i class="fa fa-th"></i> WORK</a>
+                <a href="#Skills" class="Mau-bar-item Mau-button"><i class="fa fa-star"></i> SKILLS</a>
+                <a href="#contact" class="Mau-bar-item Mau-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="Mau-bar-item Mau-button Mau-right Mau-hide-large Mau-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="Mau-sidebar Mau-bar-block Mau-dark-grey Mau-card-2 Mau-animate-left Mau-hide-medium Mau-hide-large" style="display:none"
+        id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="Mau-bar-item Mau-button Mau-large Mau-padding-16">Close &times;</a>
+        <a href="#about" onclick="w3_close()" class="Mau-bar-item Mau-button">ABOUT</a>
+        <a href="#Personal" onclick="w3_close()" class="Mau-bar-item Mau-button">PERSONAL</a>
+        <a href="#work" onclick="w3_close()" class="Mau-bar-item Mau-button">WORK</a>
+        <a href="#Skills" onclick="w3_close()" class="Mau-bar-item Mau-button">SKILLS</a>
+        <!--<a href="#pricing" onclick="w3_close()" class="Mau-bar-item Mau-button">PRICING</a>-->
+        <a href="#contact" onclick="w3_close()" class="Mau-bar-item Mau-button">CONTACT</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+
+    <header class="bgimg-1 Mau-display-container Mau-grayscale-min" id="home">
+
+        <div class="Mau-display-center Mau-text-black" style="padding:48px">
+            <span class="Mau-jumbo Mau-hide-small mau-faded-grey"> </span><br>
+            <span class="Mau-xxlarge Mau-hide-large Mau-hide-medium mau-faded-grey">  </span><br>
+        </div>
+
+        <p class="Mau-center Mau-large"><a href="#about" class="Mau-text-white Mau-jumbo Mau-normal-text Mau-hover-opacity-off">Mau Lorenzetti</a></p>
+
+
+
+
+    </header>
+
+    <!-- About Section -->
+    <div class="Mau-container" style="padding:30px 16px" id="about">
+        <h2 class="Mau-center Mau-xxxlarge">Howdy!</h2>
+        <h2 class="Mau-center Mau-xlarge">I'm Mau</h2>
+        <p class="Mau-center Mau-xlarge">short for "Maurizio" (/'Ma-uu-ree-see-oh/)</p>
+        <div class="Mau-large" style="margin-top:50px">
+            <!--<div class="Mau-quarter">-->
+            <!--<i class="fa fa-desktop Mau-margin-bottom Mau-xlarge Mau-center"></i>-->
+            <div class="Mau-col m6">
+                <img class="Mau-image Mau-round-large" src="images/ccmSmile.jpg" alt="cpu" width="650" height="394">
+            </div>
+            <div class="Mau-center Mau-large">
+                <div class="Mau-col m6" style="padding:16px">
+
+                    <h3 style="padding: 8px"> Full Time Developer</h3>
+                    <h3 style="padding: 8px"> Part Time Exercise Nut </h3>
+                    <h3 style="padding: 8px"> Always On The Move</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="Mau-container Mau-light-grey" style="padding:50px 32px" id="Personal">
+        <div class="Mau-center">
+            <div class="Mau-center" style="padding:25px 25px">
+                <h2 class="Mau-center Mau-xxxlarge"> A little about Mau </h2>
+
+                <h3 style="padding:25px 25px"> From the beginning, determination, creativity and sense of fulfillment have been the core to what I do. I
+                    work in this industry to collaborate with other like minded individuals, overcome challenges, continuously
+                    learn, and overall to create beautiful solutions <br> ..... </h3>
+
+                <h6 style="padding-left:80px; padding-right:80px;"> Ok, now that I gave you my catchy two liner— here is who I really am; I am a proud <b>immigrant</b> from
+                    Cochabamba, Bolivia doing software Development in Austin, TX. I could tell you how much I love coding
+                    but the truth is some days are better than others. During my low days I leave work exhausted, overworked
+                    and sometimes, the only thing that keeps me sane is my "I wish I could Rap" spotify playlist— but when
+                    it's a good day, BOY do I feel like i'm on cloud 9. Their is no greater feeling than being able to debug
+                    your code and seeing your compiler load without any issues. Those little moments of my job is what I
+                    live for at work. The reality is that being a developer truly takes a special kind of determination,
+                    creativity and sense of personal value to be in this profession. We are hired to provide solutions that
+                    others do not know how to create— I wouldn't trade my profession for anything else </h6>
+                <h3> ..... <br> </h3> All that being said I want to leave you with a quote from one of my favorite authors that
+                is humorously very applicable to software development.
+
+                <p class="Mau-center Mau-xlarge p-italic">"Sometimes you just have to try, even if you know it won’t work." - Junot Diaz</p>
+
+            </div>
+            <p><a href="#work" class="Mau-button Mau-dark-grey"><i class="fa fa-th">&nbsp;</i> View My Work</a></p>
+
+            <iframe width="650" height="385" onclick="onClick(this)" src="https://player.vimeo.com/video/223807598" frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+
+
+    <!-- Promo Section "Statistics" -->
+    <div class="Mau-container Mau-row Mau-center Mau-dark-grey Mau-padding-64">
+        <div class="Mau-quarter">
+            <span class="Mau-xxlarge">700+</span>
+            <br>Hours Coding
+        </div>
+        <div class="Mau-quarter">
+            <span class="Mau-xxlarge">15+</span>
+            <br>Projects Done
+        </div>
+        <div class="Mau-quarter">
+            <span class="Mau-xxlarge">200+</span>
+            <br>Meetings
+        </div>
+        <div class="Mau-quarter">
+            <span class="Mau-xxlarge">40+</span>
+            <br>Cups of Coffee
+        </div>
+    </div>
+
+    <!-- Work Section -->
+    <div class="Mau-container white" style="padding:128px 16px" id="work">
+        <h3 class="Mau-center Mau-xxxlarge">Some Slight Work</h3>
+        <h3 class="Mau-center">Check out some work that I have done</h3>
+
+        <div class="Mau-row-padding" style="margin-top:64px">
+            <div class="Mau-col l3 m6">
+                <img src="images/HeroPage1.jpg" width="100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="HTML/CSS Hero Page Sample">
+            </div>
+            <div class="Mau-col l3 m6">
+                <img src="images/RocketDesign3.jpg" width="100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="HTML/CSS Rocket UI">
+            </div>
+            <div class="Mau-col l3 m6">
+                <img src="images/AcmeProductList.jpg" height="200%" width="100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="Angular 2 Product List">
+            </div>
+            <div class="Mau-col l3 m6">
+                <img src="images/TestReactionFinal.jpg" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="JS Test Reactions">
+            </div>
+        </div>
+
+        <div class="Mau-row-padding Mau-section">
+            <div class="Mau-col l3 m6">
+                <img src="images/FormValidation2.jpg" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="JS Security Setting Validator">
+            </div>
+            <div class="Mau-col l3 m6">
+                <img src="images/HerosUI.jpg" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="Angular 2 Super Hero UI">
+            </div>
+            <div class="Mau-col l3 m6">
+                <img src="images/bbc3.jpg" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="HTML/CSS BBC home page">
+            </div>
+            <div class="Mau-col l3 m6">
+                <img src="images/CCM.jpg" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="HTML/CSS/JS Cafe Con Mau">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="Mau-modal Mau-black" onclick="this.style.display='none'">
+        <span class="Mau-button Mau-xxlarge Mau-black Mau-padding-large Mau-display-topright" title="Close Modal Image">&times;</span>
+        <div class="Mau-modal-content Mau-animate-zoom Mau-center Mau-transparent Mau-padding-64">
+            <img id="img01" class="Mau-image">
+            <p id="caption" class="Mau-opacity Mau-large"></p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+
+    <div class="Mau-light-grey Mau-row-padding" style="padding:64px 16px" id="Skills">
+
+        <h3 class="Mau-center">Value Enhancing </h3>
+        <h3 class="Mau-center Mau-xxxlarge">Skills </h3>
+        <div class="Mau-container Mau-light-grey Mau-row-padding">
+            <div class="Mau-col m6">
+                <p class="Mau-wide"><i class="fa fa-code Mau-margin-right"></i>HTML5</p>
+                <div class="Mau-grey">
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:89%">89%</div>
+                </div>
+                <p class="Mau-wide"><i class="fa fa-image Mau-margin-right"></i>CSS3</p>
+                <div class="Mau-grey">
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:85%">85%</div>
+                </div>
+                <p class="Mau-wide"><i class="fa fa-spinner Mau-margin-right"></i>JavaScript</p>
+                <div class="Mau-grey">
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:80%">80%</div>
+                </div>
+                <p class="Mau-wide"><i class="fa fa-shield Mau-margin-right"></i>Angular</p>
+                <div class="Mau-grey">
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:75%">75%</div>
+                </div>
+
+            </div>
+            <div class="Mau-col m6">
+                <p class="Mau-wide"><i class="fa fa-dashboard Mau-margin-right"></i>Angular Material</p>
+                <div class="Mau-grey">
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:80%">80%</div>
+                </div>
+                <p class="Mau-wide"><i class="fa fa-desktop Mau-margin-right"></i>Web Design</p>
+                <div class="Mau-grey">
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:75%">75%</div>
+                </div>
+                <p class="Mau-wide"><i class="fa fa-database Mau-margin-right"></i>SQL</p>
+                <div class="Mau-grey">
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:80%">80%</div>
+                </div>
+
+                <p class="Mau-wide"><i class="fa fa-gears Mau-margin-right"></i>Web APIs </p>
+                <div class="Mau-grey">
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:60%">60%</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="Mau-container Mau-light-white" style="padding:64px 16px" id="contact">
+        <h3 class="Mau-center">Lets get in touch</h3>
+        <h3 class="Mau-center Mau-xxxlarge">Coffee? </h3>
+        <div class="Mau-row-padding" style="margin-top:64px">
+            <div class="Mau-half">
+
+
+
+                <h5><i class="fa fa-map-marker fa-fw Mau-xxlarge Mau-margin-right"></i> Austin, TX</h5>
+                <h5><i class="fa fa-phone fa-fw Mau-xxlarge Mau-margin-right"></i> (512)-712-6399 </h5>
+                <h5><i class="fa fa-envelope fa-fw Mau-xxlarge Mau-margin-right"> </i> mlorenze23@gmail.com</h5>
+                <br>
+            </div>
+
+            <div class="Mau-col m6">
+                <img class="Mau-image Mau-round-large" src="images/ccmcpu.jpg" alt="cpu" width="700" height="394">
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="Mau-center Mau-dark-grey Mau-padding-64">
+        <a href="#home" class="Mau-button Mau-light-grey"><i class="fa fa-arrow-up Mau-margin-right"></i>To the top</a>
+        <div class="Mau-xlarge Mau-section">
+            <a href="https://www.facebook.com/mlorenzetti23?ref=bookmarks" title="Facebook" target="_blank" class="fa fa-facebook-official Mau-hover-opacity"></a>
+
+            <a href="https://github.com/Mauriziol23" title="Github" target="_blank" class="fa fa-github
+             Mau-hover-opacity"></a>
+
+            <a href="https://www.instagram.com/mauriziol23/" title="Instagram" target="_blank" class="fa fa-instagram Mau-hover-opacity"></a>
+
+            <a href="https://twitter.com/mauriziol23?lang=en" title="Twitter" target="_blank" class="fa fa-twitter Mau-hover-opacity">
+            </a>
+
+            <a href="https://www.linkedin.com/in/maurizio-lorenzetti-99b2b08b/" title="linkedin" target="_blank" class="fa fa-linkedin Mau-hover-opacity">
+            </a>
+        </div>
+
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+
+</body>
+
+</html>
