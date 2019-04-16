@@ -432,6 +432,10 @@ a:hover {
 .Mau-grayscale-min {
     filter: grayscale(50%);
 }
+.Mau-greyscale-mid,
+.Mau-grayscale-mid {
+    filter: grayscale(75%);
+}
 
 .Mau-display-left {
     position: absolute;
@@ -534,6 +538,14 @@ a:hover {
 .Mau-image {
     max-width: 100%;
     height: auto;
+}
+
+.Mau-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
 }
 
 .Mau-round-large {

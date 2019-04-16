@@ -25,6 +25,61 @@
         line-height: 1.8;
     }
 
+    section {
+    max-width: 50%;
+    width: 300px;
+    margin: auto;
+    /* PADDING-LEFT: 25%; */
+    /* PADDING-RIGHT: 25%; */
+    text-align: center;
+  }
+  /* 
+STOP */
+  .video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .video-wrap video,
+  iframe,
+  video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .video-fit {
+    height: 60rem;
+  }
+  /* @media (max-width:601px) {
+    .video-fit {
+        height:20rem;
+    } */
+  @media (max-width:699px) and (min-width: 320px) {
+    .video-fit {
+      height: 25rem;
+    }
+  }
+  @media (max-width:1200px) and (min-width: 700px) {
+    .video-fit {
+      height: 35rem;
+    }
+  }
+  @media (max-width:1350px) and (min-width: 1201px) {
+    .video-fit {
+      height: 55rem;
+    }
+    @media (max-width:1650px) and (min-width: 1351px) {
+      .video-fit {
+        height: 65rem;
+      }
+    }
+  }
+
+
+
+
     /* Full height image header */
 
     .bgimg-1 {
@@ -82,23 +137,18 @@
 
     <!-- Header with full-height image -->
 
-    <header class="bgimg-1 Mau-display-container Mau-grayscale-min" id="home">
-
-        <div class="Mau-display-center Mau-text-black" style="padding:48px">
-            <span class="Mau-jumbo Mau-hide-small mau-faded-grey"> </span>
-            <br>
-            <span class="Mau-xxlarge Mau-hide-large Mau-hide-medium mau-faded-grey"> </span>
-            <br>
-        </div>
-
-        <p class="Mau-center Mau-large">
-            <a href="#about" class="Mau-text-white Mau-jumbo Mau-normal-text Mau-hover-opacity-off">Maurizio Lorenzetti</a>
-        </p>
-
-
-
-
-    </header>
+  <header class="video-fit Mau-display-container Mau-white" id="home">
+    <section>
+      <div class="video-wrap">
+        <iframe id="otherVideo" src="https://player.vimeo.com/video/223807598?autoplay=1&loop=1&muted=1&autopause=0&transparent=1"
+          allow="autoplay" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <!-- <video id="otherVideo" src="./assets/Blending_Traditional.mp4" playsinline autoplay muted loop></video> -->
+      </div>
+      <div class="overlay"></div>
+    </section>
+  
+   
+  </header>
 
     <!-- About Section -->
     <div class="Mau-container" style="padding:30px 16px" id="about">
@@ -130,31 +180,7 @@
             <div class="Mau-center">
                 <h2 class="Mau-center Mau-xxxlarge"> A little about Mau </h2>
 
-                <style>
-                    .embed-container {
-                        position: relative;
-                        padding-bottom: 25%;
-                        height: 0;
-                        overflow: hidden;
-                        max-width: 50%;
-                        max-height: 50%;
-
-                        margin-left: 25%;
-                    }
-
-                    .embed-container iframe,
-                    .embed-container object,
-                    .embed-container embed {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                    }
-                </style>
-                <div class="embed-container">
-                    <iframe src="https://player.vimeo.com/video/223807598" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
+               
 
                 <h4> From the beginning, determination, creativity and sense of fulfillment have been the core to what I do. I
                     work in this industry to collaborate with other like minded individuals, overcome challenges, continuously
@@ -214,27 +240,29 @@
     <!-- Work Section -->
     <div class="Mau-container white" style="padding:128px 16px" id="work">
         <h3 class="Mau-center Mau-xxxlarge">Some Slight Work</h3>
-        <h3 class="Mau-center">Check out some work that I have done</h3>
+        <h3 class="Mau-center">Check out some of my design & development</h3>
 
         <div class="Mau-row-padding" style="margin-top:64px">
             <div class="Mau-col l3 m6">
                 <img src="images/EPS-Keyboard.jpg" width="100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="Angular Responsive Keyboard Component">
             </div>
             <div class="Mau-col l3 m6">
-                <img src="images/cssgrid.JPG" width="100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="CSS Grid Music Dashboard Player">
+                <img src="images/mxxd.PNG" width="100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="Freelance client site: Mxxdprints">
             </div>
             <div class="Mau-col l3 m6">
-                <img src="images/AcmeProductList.jpg" height="200%" width="100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="Angular 2 Product List">
+                <img src="images/oatmealandcompany.PNG" height="200%" width="100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="Freelance Client site: Oatmealandcomapny.com">
             </div>
+         
+
             <div class="Mau-col l3 m6">
-                <img src="images/clickclock.JPG" style="width:85%" onclick="onClick(this)" class="Mau-hover-opacity" alt="JS/HTML/CSS Smart watch game">
+                <img src="images/wedding.PNG" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="Our wedding website: https://www.theknot.com/us/maria-mau">
             </div>
+
         </div>
 
         <div class="Mau-row-padding Mau-section">
-
             <div class="Mau-col l3 m6">
-                <img src="images/HerosUINew.jpg" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="Angular 2 Super Hero UI">
+                <img src="images/clickclock.JPG" style="width:85%" onclick="onClick(this)" class="Mau-hover-opacity" alt="JS/HTML/CSS Smart watch game">
             </div>
 
             <div class="Mau-col l3 m6">
@@ -267,57 +295,57 @@
         <div class="Mau-container Mau-light-grey Mau-row-padding">
             <div class="Mau-col m6">
                 <p class="Mau-wide">
-                    <i class="fa fa-code Mau-margin-right"></i>HTML5</p>
+                   HTML5</p>
                 <div class="Mau-grey">
-                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:89%">95%</div>
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:95%">95%</div>
                 </div>
                 <p class="Mau-wide">
-                    <i class="fa fa-image Mau-margin-right"></i>CSS3</p>
+                    CSS3</p>
                 <div class="Mau-grey">
                     <div class="Mau-container Mau-dark-grey Mau-center" style="width:90%">90%</div>
                 </div>
                 <p class="Mau-wide">
-                    <i class="fa fa-spinner Mau-margin-right"></i>JS</p>
+                    JS</p>
                 <div class="Mau-grey">
                     <div class="Mau-container Mau-dark-grey Mau-center" style="width:80%">80%</div>
                 </div>
                 <p class="Mau-wide">
-                    <i class="fa fa-shield Mau-margin-right"></i>Angular</p>
+                    Angular</p>
                 <div class="Mau-grey">
                     <div class="Mau-container Mau-dark-grey Mau-center" style="width:80%">80%</div>
                 </div>
                 <p class="Mau-wide">
-                    <i class="fa fa-cube Mau-margin-right"></i>NPM</p>
+                   API Integration</p>
                 <div class="Mau-grey">
-                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:75%">75%</div>
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:80%">80%</div>
                 </div>
 
             </div>
             <div class="Mau-col m6">
                 <p class="Mau-wide">
-                    <i class="fa fa-dashboard Mau-margin-right"></i>Bootstrap</p>
+                   Adobe Illustrator</p>
                 <div class="Mau-grey">
-                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:65%">65%</div>
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:90%">90%</div>
                 </div>
                 <p class="Mau-wide">
-                    <i class="fa fa-desktop Mau-margin-right"></i>Design</p>
+                   Balsamiq</p>
                 <div class="Mau-grey">
-                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:85%">85%</div>
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:90%">90%</div>
                 </div>
                 <p class="Mau-wide">
-                    <i class="fa fa-database Mau-margin-right"></i>SQL</p>
+                   Adobe XD</p>
+                <div class="Mau-grey">
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:80%">80</div>
+                </div>
+                <p class="Mau-wide">
+                   Scrum </p>
                 <div class="Mau-grey">
                     <div class="Mau-container Mau-dark-grey Mau-center" style="width:80%">80%</div>
                 </div>
                 <p class="Mau-wide">
-                    <i class="fa fa-code-fork Mau-margin-right"></i>Git </p>
+                   Sketch </p>
                 <div class="Mau-grey">
-                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:80%">80%</div>
-                </div>
-                <p class="Mau-wide">
-                    <i class="fa fa-gears Mau-margin-right"></i>Web APIs </p>
-                <div class="Mau-grey">
-                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:60%">60%</div>
+                    <div class="Mau-container Mau-dark-grey Mau-center" style="width:75%">75%</div>
                 </div>
             </div>
         </div>
@@ -327,27 +355,51 @@
 
 
     <!-- Contact Section -->
-    <div class="Mau-container Mau-light-white" style="padding:64px 16px" id="contact">
-        <h3 class="Mau-center">Lets get in touch</h3>
-        <h3 class="Mau-center Mau-xxxlarge">Coffee? </h3>
-        <div class="Mau-row-padding" style="margin-top:64px">
-            <div class="Mau-center">
+  <!-- The Contact Section -->
+  <div class="Mau-center">
+    <!-- <div class="Mau-col m6"> -->
+    <img class="Mau-image Mau-round-large" style="margin-top:30px;"src="images/ccmcpu.jpg" alt="cpu" width="500" height="394">
+</div>
 
-                <h5>
-                    <i class="fa fa-map-marker fa-fw Mau-xxlarge Mau-margin-right"></i> Austin, TX</h5>
-                <h5>
-                    <i class="fa fa-envelope fa-fw Mau-xxlarge Mau-margin-right"> </i> mlorenze23@gmail.com</h5>
-                <br>
-
-
-                <!-- <div class="Mau-col m6"> -->
-                <img class="Mau-image Mau-round-large" src="images/ccmcpu.jpg" alt="cpu" width="700" height="394">
+  <div class="Mau-container Mau-content Mau-padding-64 " style="max-width:800px " id="contact">
+    <h2 class="Mau-wide Mau-center Mau-xxlarge">Lets get in touch</h2>
+    <p class="Mau-opacity Mau-center Mau-large">
+      <i>
+        Coffee? </i>
+    </p>
+    <div class="Mau-row Mau-padding-32 ">
+      <div class="Mau-col m6 Mau-large Mau-margin-bottom ">
+        <i class="fa fa-map-marker " style="width:30px "></i> Austin, TX
+        <br>
+       
+        <i class="fa fa-envelope " style="width:30px "> </i> Email: Mlorenze23@gmail.com
+        <br>
+      </div>
+      <div class="Mau-col m6 ">
+        <form action="/action_page.php " target="_blank ">
+          <div class="Mau-row-padding " style="margin:0 -16px 8px -16px ">
+            <div class="Mau-half ">
+              <input class="Mau-input Mau-border " type="text " placeholder="Name " required name="Name ">
             </div>
-
-
-
-        </div>
+            <div class="Mau-half ">
+              <input class="Mau-input Mau-border " type="text " placeholder="Email " required name="Email ">
+            </div>
+          </div>
+          <input class="Mau-input Mau-border " type="text " placeholder="Message " required name="Message ">
+          <button class="Mau-button Mau-black Mau-section Mau-right " type="submit ">SEND</button>
+        </form>
+      </div>
     </div>
+  </div>
+
+
+
+   
+        
+
+
+
+    
 
 
     <!-- Footer -->
