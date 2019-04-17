@@ -380,6 +380,12 @@ a:hover {
     background-color: black !important;
 }
 
+.Mau-navy,
+.Mau-hover-navy:hover {
+    background-color: #1C2E4C !important;
+    color: #fff !important;
+}
+
 .Mau-animate-left {
     position: relative;
     animation: animateleft 0.4s;
