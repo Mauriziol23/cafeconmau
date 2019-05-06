@@ -196,6 +196,11 @@ a {
     padding: 8px 16px;
 }
 
+
+
+
+
+
 .Mau-bar {
     width: 100%;
     overflow: hidden;
@@ -338,7 +343,7 @@ a:hover {
 
 @media (min-width:993px) {
     .Mau-modal-content {
-        width: 900px;
+        width: 900px !important;
     }
     .Mau-hide-large {
         display: none !important;
@@ -378,6 +383,24 @@ a:hover {
 .Mau-hover-black:hover {
     color: #fff !important;
     background-color: black !important;
+}
+
+.Mau-new-black,
+.Mau-hover-new-black:hover {
+    color: #fff !important;
+    background-color: #2A3436 !important;
+}
+
+.Mau-sand,
+.Mau-hover-sand:hover {
+    color: #2A3436 !important;
+    background-color: #B7AB96 !important;
+}
+
+.Mau-offwhite,
+.Mau-hover-offwhite:hover {
+    color: #2A3436 !important;
+    background-color: #EDEDED !important;
 }
 
 .Mau-navy,
@@ -448,6 +471,13 @@ a:hover {
     top: 50%;
     left: 0%;
     transform: translate(0%, -50%);
+}
+.Mau-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
 }
 
 .Mau-text-black,
@@ -576,7 +606,8 @@ a:hover {
 .Mau-third,
 .Mau-twothird,
 .Mau-threequarter,
-.Mau-quarter {
+.Mau-quarter
+.Mau-remaining {
     float: left;
     object-fit: cover;
 }
@@ -587,9 +618,12 @@ a:hover {
 .Mau-row-padding>.Mau-twothird,
 .Mau-row-padding>.Mau-threequarter,
 .Mau-row-padding>.Mau-quarter,
+.Mau-row-padding>.Mau-remaining,
 .Mau-row-padding>.Mau-col {
     padding: 0 8px;
 }
+
+
 
 .Mau-modal {
     z-index: 3;
@@ -625,6 +659,12 @@ a:hover {
 
 .Mau-padding-large {
     padding: 12px 24px !important;
+}
+
+.Mau-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
 }
 
 .Mau-display-topright {
@@ -671,6 +711,12 @@ a:hover {
 .Mau-quarter {
     width: 24.99999%;
 }
+
+
+.Mau-remaining {
+    width:  75%;
+}
+
 
 .white,
 .Mau-hover-white:hover {
