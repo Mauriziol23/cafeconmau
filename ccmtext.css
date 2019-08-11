@@ -96,6 +96,14 @@ summary {
     font-size: 500%;
 }
 
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/Mausand2.jpg");
+    min-height: 100%;
+    opacity: 0.98;
+}
+
 .p-italic {
     font-style: italic;
 }
