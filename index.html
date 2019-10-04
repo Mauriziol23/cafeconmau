@@ -776,7 +776,7 @@ sample two-third -->
   <div class="Mau-container"  style="padding:50px 32px" id="contact">
       <div class="Mau-row">
     <h2 class="Mau-container Mau-half">CONTACT</h2>
-    <p class="Mau-container">Send me a message to see more of my work!</p>
+    <p class="Mau-container">Need assistance with your digital presence? I know a guy that can help! (Bad joke.. it's me). Send me a message below, and I will get in touch with you ASAP!</p>
 </div>
 
     <div class="Mau-row Mau-padding-32">
@@ -785,18 +785,34 @@ sample two-third -->
         <i class="fa fa-envelope" style="width:15px"> </i> Mlorenze23@gmail.com<br>
       </div> -->
       <div class="Mau-container">
-        <form action="/action_page.php" target="_blank">
+        <form class="body-text" method="POST" action="https://formspree.io/mlorenze23@gmail.com">
           <div class="Mau-row-padding" style="margin:0 -16px 8px -16px">
             <div class="Mau-half">
-              <input class="Mau-input w3-border" type="text" placeholder="Name" required name="Name">
+              <input class="Mau-input w3-border" type="text" placeholder="Name" required name="name">
             </div>
             <div class="Mau-half">
-              <input class="Mau-input Mau-border" type="text" placeholder="Email" required name="Email">
+              <input class="Mau-input Mau-border" type="text" placeholder="Email" required name="email">
             </div>
           </div>
-          <input class="Mau-input Mau-border" style="height: 30px;" type="text" placeholder="Message" required name="Message">
+          <input class="Mau-input Mau-border" style="height: 30px;" type="text" placeholder="What can I help you with?" required name="message">
           <button class="Mau-button Mau-new-black Mau-section Mau-right" type="submit">SEND</button>
         </form>
+
+<!-- 
+        <form class="body-text" method="POST" action="https://formspree.io/mlorenze23@gmail.com">
+            
+            <input class="Mau-input w3-border" type="text" placeholder="Name" required name="name">
+            <br>
+
+            <input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="email">
+            <br>
+            <input class="w3-input w3-padding-16 w3-border" type="tel" placeholder="Phone #" required name="tel">
+            <br>
+            <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your message" required name="message">
+            <br>
+            <button class="w3-button" type="submit" name="submit" value="Send">SEND MESSAGE</button>
+
+        </form> -->
       </div>
     </div>
   </div>
